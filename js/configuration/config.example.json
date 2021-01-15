@@ -1,0 +1,6 @@
+{
+    "token": "discord-bot-token",
+    "guildID": "guild-id",
+    "channelID": "channel-id",
+    "prefix": "!"
+}
