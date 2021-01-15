@@ -1,7 +1,7 @@
 # gmod-discord-relay
 
 Don't use on production servers, in early development.
-Just a little proof on concept using GWSockets + discord.js.
+Just a little proof of concept using GWSockets + discord.js.
 
 # Installation
 
