@@ -2,12 +2,12 @@
 
 ## Important!
 This script isn't finished at all, so you're running it on your own responsibility.
-Basically it's discord relay which works in both ways, discord to server and reverse.
+Basically it's discord relay which works in both ways, discord to server and reverse.  
 
 ## Commands
-**!status** - display status of your server.
-**!rcon** - run commands on your server.
-**!runlua** - run scripts on your server.
+**!status** - display status of your server.  
+**!rcon** - run commands on your server.  
+**!runlua** - run scripts on your server.  
 
 ## Installation
 
@@ -22,7 +22,7 @@ Basically it's discord relay which works in both ways, discord to server and rev
 
 ## Credits
 
-**GWSockets** by FredyH (https://github.com/FredyH/GWSockets)
-**discord.js** by discord.js team (https://github.com/discordjs/discord.js)
+**GWSockets** by FredyH (https://github.com/FredyH/GWSockets)  
+**discord.js** by discord.js team (https://github.com/discordjs/discord.js)  
 
 
