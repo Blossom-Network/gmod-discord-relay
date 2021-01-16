@@ -11,11 +11,23 @@ client.on('message', (msg) => {
     if (msg.channel.id == config.channelID && msg.guild.id == config.guildID && !msg.author.bot) {
         data = {
             "username": msg.member.user.username,
-            "text": msg.content
+            "text": msg.content,
+            "admin": false,
+            "key": config.key
+        }
+
+        for (const roleID in config.adminRoles) {
+            if (msg.member.roles.cache.has(config.adminRoles[roleID])) {
+                data["admin"] = true;
+            }
+
+            continue;
         }
 
         if(msg.content.startsWith(config.prefix)) {
             data["type"] = "command";
+            data.args = data.text.split(' ');
+            data.args.shift();
             data.text = data.text.split(' ')[0];
             data.text = data.text.substring(config.prefix.length);
         } else {
@@ -35,7 +47,7 @@ wss.on('connection', function connection(ws) {
         channel = client.guilds.cache.get(config.guildID).channels.cache.get(config.channelID);
         msg = JSON.parse(msg);
 
-        console.log(msg);
+        if(msg.key != config.key) return;
 
         if(msg.type == "text") channel.send(msg.data);
         if(msg.type == "embed") {
