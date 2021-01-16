@@ -1,7 +1,7 @@
 # gmod-discord-relay
 
 ## Important!
-This script isn't finished at all, so you're running it on your own responsibility.
+This script isn't finished at all, so you're running it on your own responsibility.  
 Basically it's discord relay which works in both ways, discord to server and reverse.  
 
 ## Commands
