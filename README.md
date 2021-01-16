@@ -1,13 +1,28 @@
 # gmod-discord-relay
 
-Don't use on production servers, in early development.
-Just a little proof of concept using GWSockets + discord.js.
+## Important!
+This script isn't finished at all, so you're running it on your own responsibility.
+Basically it's discord relay which works in both ways, discord to server and reverse.
 
-# Installation
+## Commands
+**!status** - display status of your server.
+**!rcon** - run commands on your server.
+**!runlua** - run scripts on your server.
 
-1. Install discord.js using NPM (npm install node.js)
-2. Configure bot using config.example.json and rename it to config.json
-3. Start bot.
-4. Install GWSockets module for your operating system (i'm using Windows, so I'm including Windows binary).
-5. Configure LUA script to connect to your websocket from index.jsw.
-6. Start server.
+## Installation
+
+ 1. Download package from our repository.
+ 2. Install discord.js using NPM package manager.
+ 3. Create Discord Application using Developer Portal and create Bot for it.
+ 4. Attach your bot token to node.js application.
+ 5. Configure bot using configuration file (config.js), example is attached in the repository.
+ 6. Install script on your server and download newest GWSocket module.
+ 7. Configure lua script so it will connect to your web socket.
+ 8. Run application and start up the server.
+
+## Credits
+
+**GWSockets** by FredyH (https://github.com/FredyH/GWSockets)
+**discord.js** by discord.js team (https://github.com/discordjs/discord.js)
+
+
